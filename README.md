@@ -47,11 +47,12 @@ Parse a text-based workout log file
             { reps: 5, weight: 100 } ] } ] } ]
 ```
 
-## usage
+## example usage
 
 ```js
 const parse = require('parse-gym-log')
-parse(input)
+const input = require('fs').readFileSync('my-workout-log.txt', 'utf8')
+console.log(parse(input))
 ```
 
 ## cli
