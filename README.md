@@ -1,6 +1,6 @@
 # parse-gym-log
 
-Parse text-based workout log file
+Parse a text-based workout log file
 
 ## example
 
