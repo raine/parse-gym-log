@@ -60,5 +60,5 @@ Using `parse-gym-log` on the command-line will output the log in JSON format.
 
 ```sh
 $ npm install -g parse-gym-log
-$ < log.txt | parse-gym-log
+$ cat log.txt | parse-gym-log
 ```
