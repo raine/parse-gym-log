@@ -28,7 +28,7 @@ Parse text-based workout log file
 
 ### output
 
-``` js
+```js
 [ { date: '20.04.2018',
     exercises:
      [ { exercise: 'squat',
@@ -47,9 +47,18 @@ Parse text-based workout log file
             { reps: 5, weight: 100 } ] } ] } ]
 ```
 
-### usage
+## usage
 
 ```js
 const parse = require('parse-gym-log')
 parse(input)
+```
+
+## cli
+
+Using `parse-gym-log` on the command-line will output the log in JSON format.
+
+```sh
+$ npm install -g parse-gym-log
+$ < log.txt | parse-gym-log
 ```
