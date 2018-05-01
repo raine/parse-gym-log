@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const parse = require('../')
+const stdin = require('get-stdin')
+
+stdin()
+  .then((str) => {
+    console.log(JSON.stringify(parse(str), null, 2))
+  })
+  .catch((err) => {
+    console.error(err.stack || err)
+  })

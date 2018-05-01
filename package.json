@@ -2,15 +2,23 @@
   "name": "parse-gym-log",
   "version": "1.0.0",
   "description": "Parse text-based workout log file",
+  "keywords": [
+    "squat",
+    "deadlift",
+    "gym",
+    "pegjs"
+  ],
+  "repository": "raine/parse-gym-log",
+  "author": "Raine Virta <raine.virta@gmail.com>",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "test": "npm run build-parser && ava",
     "build-parser": "pegjs -o gym-log-parser.js gym-log-parser.pegjs"
   },
-  "keywords": ["squat", "deadlift", "gym", "pegjs"],
-  "repository": "raine/parse-gym-log",
-  "author": "Raine Virta <raine.virta@gmail.com>",
-  "license": "ISC",
+  "bin": {
+    "parse-gym-log": "./bin/parse-gym-log"
+  },
   "devDependencies": {
     "ava": "^0.25.0",
     "dedent": "^0.7.0",
@@ -25,8 +33,15 @@
     "arrowParens": "always"
   },
   "ava": {
-    "files": ["test.js"],
-    "source": ["**/*.js"],
+    "files": [
+      "test.js"
+    ],
+    "source": [
+      "**/*.js"
+    ],
     "failFast": true
+  },
+  "dependencies": {
+    "get-stdin": "^6.0.0"
   }
 }
