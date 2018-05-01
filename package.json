@@ -8,6 +8,7 @@
     "build-parser": "pegjs -o gym-log-parser.js gym-log-parser.pegjs"
   },
   "keywords": ["squat", "deadlift", "gym", "pegjs"],
+  "repository": "raine/parse-gym-log",
   "author": "Raine Virta <raine.virta@gmail.com>",
   "license": "ISC",
   "devDependencies": {
